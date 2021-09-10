@@ -1,0 +1,70 @@
+* {
+    background-color: #fdfdfd;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: Coda;
+}
+.nav1 {
+    background-color: #fdfdfd !important;
+    color: black !important;
+    text-decoration-color: black !important;
+    letter-spacing: 0.2em;
+    white-space: nowrap;
+    font-size: 1.5vw;
+}
+.footer {
+  background-color: #EDEDED !important;
+  padding: 2vw 2vw;
+}
+.card {
+    /* Add shadows to create the "card" effect */
+    border-radius: 0.5vw !important;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-bottom: 25px;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .containercard {
+    padding: 1.5vw 3vw;
+    border-radius: 0 0 2vw 2vw;
+  }
+  .container1 {
+      margin: 0 10% 0 10%;
+  }
+  .more-button  {
+    margin: 0 5px 0 0;
+    border: none;
+    font-size: 1.7vw;
+    font-style: bold;
+    float: right;
+  }
+
+  .itemcard {
+    font-size: 2vw;
+    text-align: center;
+  }
+  .date {
+    font-size: 1vw;
+  }
+  .nav-title  {
+    font-size: 2vw;
+  }
+  .item-text  {
+    font-size:  1.6vw;
+  }
+  .footer-brand {
+    background-color: #EDEDED;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  .footer-text  {
+    text-decoration: none !important;
+    text-decoration: #000 !important;
+  }
+
