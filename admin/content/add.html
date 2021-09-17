@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../style.css">
   <link rel="stylesheet" href="../st.css">
+  <script src="//cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -61,32 +62,82 @@
     <div class="row">
       <div class="col-md-12">
         <div class="nav-title">
-          <p><a href="../admin.html">Settings</a>/Menu</p>
+          <p><a href="../admin.html">Settings</a>/<a href="./content.html">Content</a></p>
         </div>
       </div>
     </div>
     <div class="col-md-12">
-        <div class="row">
-          <div class="col-4  col-sm-4  col-md-4 col-lg-4 col-xl-4">
-            <a href="./add.html">
-                <div class="card">
-                    <div class="containercard">
-                        <p class="itemcard">add</p>
-                    </div>
+      <div class="row">
+        <div class="offset-3 col-6  col-sm-6  col-md-6 col-lg-6 col-xl-6">
+          <div class="card">
+            <div class="container">
+              <form action="#">
+                <div class="form-group">
+                <div class="row">
+                  <div class="col-md-5">
+                    <label for="sel1" class="itemcard">Select menu:</label>
+                  </div>
+                  <div class="col-md-7">
+                    <select class="form-control" id="sel1">
+                      <option>NEWS</option>
+                      <option>ABOUT US</option>
+                      <option>OUR SERVICES</option>
+                    </select>
+                  </div>
+                  <div class="col-md-5">
+                    <label for="sel1" class="itemcard">Select category:</label>
+                  </div>
+                  <div class="col-md-7">
+                    <select class="form-control" id="sel1">
+                      <option>NEWS</option>
+                      <option>ABOUT US</option>
+                      <option>OUR SERVICES</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="#img" class="itemcard">Input img</label>
+                  </div>
+                  <div class="col-md-8">
+                    <input class="form-control-file border" type="file">
+                  </div>
+                  <div class="col-md-2">
+                    <label for="#uzname" class="itemcard">Uzb:</label>
+                  </div>
+                  <div class="col-md-10">
+                    <textarea name="editor1"></textarea>
+        <script>
+            CKEDITOR.replace( 'editor1' );
+        </script>
+                  </div>
+                  <div class="col-md-2">
+                    <label for="#runame" class="itemcard">Rus:</label>
+                  </div>
+                  <div class="col-md-10">
+                    <textarea id="runame" name="editor2"></textarea>
+        <script>
+            CKEDITOR.replace( 'editor2' );
+        </script>
+                  </div>
+                  <div class="col-md-2">
+                    <label for="#enname" class="itemcard">Eng:</label>
+                  </div>
+                  <div class="col-md-10">
+                    <textarea id="enname" name="editor3"></textarea>
+        <script>
+            CKEDITOR.replace( 'editor3' );
+        </script>
+                  </div>
+                  <div class="offset-3 col-md-6">
+                    <button type="button" class="btn btn-success">Add</button>
+                  </div>
                 </div>
-            </a>
-          </div>
-          <div class="col-4  col-sm-4  col-md-4 col-lg-4 col-xl-4">
-            <a href="./change.html">
-                <div class="card">
-                    <div class="containercard">
-                        <p class="itemcard">change</p>
-                    </div>
                 </div>
-            </a>
+              </form>
+            </div>
           </div>
         </div>
       </div>
+    </div>
   </div>
   <!-- Site footer -->
   <footer class="site-footer">

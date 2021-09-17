@@ -61,32 +61,60 @@
     <div class="row">
       <div class="col-md-12">
         <div class="nav-title">
-          <p><a href="../admin.html">Settings</a>/Menu</p>
+          <p><a href="../admin.html">Settings</a>/<a href="./category.html">Category</a></p>
         </div>
       </div>
     </div>
     <div class="col-md-12">
-        <div class="row">
-          <div class="col-4  col-sm-4  col-md-4 col-lg-4 col-xl-4">
-            <a href="./add.html">
-                <div class="card">
-                    <div class="containercard">
-                        <p class="itemcard">add</p>
+      <div class="row">
+        <div class="offset-3 col-6  col-sm-6  col-md-6 col-lg-6 col-xl-6">
+          <div class="card">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <label for="sel1" class="itemcard">Select menu:</label>
+                      </div>
+                      <div class="col-md-5">
+                        <select class="form-control" id="sel1">
+                          <option>NEWS</option>
+                          <option>ABOUT US</option>
+                          <option>OUR SERVICES</option>
+                        </select>
+                      </div>
+                      <div class="col-md-3">
+                        <button class="btn btn-success itemcard">search</button>
+                      </div>
                     </div>
+                  </div>
                 </div>
-            </a>
-          </div>
-          <div class="col-4  col-sm-4  col-md-4 col-lg-4 col-xl-4">
-            <a href="./change.html">
-                <div class="card">
-                    <div class="containercard">
-                        <p class="itemcard">change</p>
-                    </div>
+                <div class="col-md-12">
+                  <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center itemcard">
+                      NEWS
+                      <i class="fas fa-trash-alt"></i>
+                      <i class="fas fa-pencil-alt"></i>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center itemcard">
+                      ABOUT US
+                      <i class="fas fa-trash-alt"></i>
+                      <i class="fas fa-pencil-alt"></i>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center itemcard">
+                      OUR SERVICES
+                      <i class="fas fa-trash-alt"></i>
+                      <i class="fas fa-pencil-alt"></i>
+                    </li>
+                  </ul>
                 </div>
-            </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </div>
   </div>
   <!-- Site footer -->
   <footer class="site-footer">
